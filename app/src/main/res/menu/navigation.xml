@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/Item_shop"
-        android:icon="@drawable/icons8_carrito_de_la_compra_cargado_96"
-        android:title="Productos" />
+        android:id="@+id/Item_prom"
+        android:icon="@drawable/promocion"
+        android:title="Promociones" />
 
     <item
-        android:id="@+id/Item_buy"
-        android:icon="@drawable/icons8_bolsa_de_compras_96"
-        android:title="Compras" />
+        android:id="@+id/Item_market"
+        android:icon="@drawable/supermercado"
+        android:title="Supermercados" />
 
     <item
         android:id="@+id/Item_fav"
-        android:icon="@drawable/icons8_estrella_de_navidad_96"
+        android:icon="@drawable/estrella"
         android:title="Favoritos" />
 
     <item

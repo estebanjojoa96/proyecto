@@ -1,15 +1,11 @@
 package com.example.estebanjojoa.bottonnavigation;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Layout;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,31 +23,31 @@ public class MainActivity extends AppCompatActivity {
 
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.Item_shop:
-                         Fragment1 fragment1 = new Fragment1();
+                    case R.id.Item_prom:
+                         PromotionFragment promotionFragment = new PromotionFragment();
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.frameLayout, fragment1)
+                                .replace(R.id.frameLayout, promotionFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null)
                                 .commit();
 
                         break;
-                    case R.id.Item_buy:
-                        Fragment2 fragment2 = new Fragment2();
+                    case R.id.Item_market:
+                        SupermarketFragment supermarketFragment = new SupermarketFragment();
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.frameLayout, fragment2)
+                                .replace(R.id.frameLayout, supermarketFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null)
                                 .commit();
 
                         break;
                     case R.id.Item_fav:
-                        Fragment3 fragment3 = new Fragment3();
+                        FavoritesFragment favoritesFragment = new FavoritesFragment();
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.frameLayout, fragment3)
+                                .replace(R.id.frameLayout, favoritesFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null)
                                 .commit();
@@ -59,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.Item_user:
-                        Fragment4 fragment4 = new Fragment4();
+                        ProfileFragment profileFragment = new ProfileFragment();
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.frameLayout, fragment4)
+                                .replace(R.id.frameLayout, profileFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null)
                                 .commit();
